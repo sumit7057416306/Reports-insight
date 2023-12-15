@@ -1,0 +1,658 @@
+body {
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0%;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 20px;
+  }
+
+  /* Add different styles for each box */
+  #box1 { background-color: lightblue; }
+  #box2 { background-color: lightgreen; }
+  #box3 { background-color: lightcoral; }
+  #box4 { background-color: lightsalmon; }
+
+  /* Add a container to hold the content */
+  #content-container {
+    margin-top: 20px;
+  }
+
+  .content {
+    display: none;
+  }
+
+.content {
+      display: none;
+      animation: crazyAnimation 1s ease-in-out;
+    }
+
+    @keyframes crazyAnimation {
+      0% {
+        transform: rotate(0deg) scale(1);
+      }
+      25% {
+        transform: rotate(90deg) scale(1.2);
+      }
+      50% {
+        transform: rotate(180deg) scale(0.8);
+      }
+      75% {
+        transform: rotate(270deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+      }
+    }
+
+
+
+
+.right {
+    margin: 15px;
+}
+
+.left {
+    margin: 15px;
+    border: #e74c3c;
+    border-radius: 5px;
+    position: sticky;
+}
+
+.left h2 {
+    text-align: center;
+    margin-top: -450px;
+    background-color: rgb(2, 2, 48);
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+    animation: slideInLeft 1s forwards;
+    /* Slide in from the left animation */
+}
+
+.img-left img {
+    margin-top: 10px;
+}
+
+.para {
+    /* color: red; */
+    animation: fadeIn 1s forwards;
+    /* Fade-in animation */
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    padding-top: 15px;
+    animation: fadeInUp 1s forwards;
+    /* Fade-in and slide up animation */
+}
+
+.side-bottom {
+    position: relative;
+}
+
+.table-content {
+    border: 2px solid cyan;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    background: linear-gradient(45deg, #4CAF50, #2196f3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: gradientAnimation 5s infinite;
+}
+
+.container {
+    margin: 15px;
+}
+
+#top-p {
+    font-size: large;
+    background-color: rgb(238, 231, 231);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Add your table styling */
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff3e6;
+    /* Light orange table background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.th,
+.td {
+    border: 1px solid #4CAF50;
+    /* Dark green border */
+    padding: 12px;
+    text-align: left;
+}
+
+.th {
+    background-color: #4CAF50;
+    /* Dark green header background */
+    color: white;
+}
+
+.th:hover {
+    background-color: #387d8e;
+    /* Darker green on hover */
+}
+
+.tr:nth-child(even) {
+    background-color: #b2dfdb;
+    /* Light teal alternate row background */
+}
+
+.tr:hover {
+    background-color: #387d8e;
+    /* Dark green hover background */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(47, 4, 86);
+    cursor: pointer;
+    color: white;
+    height: 50px;
+    width: 175px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 450px;
+    margin-bottom: 15px;
+}
+
+#btn:hover {
+
+    border-radius: 10px;
+    background-color: slateblue;
+    color: black;
+}
+
+.bottom {
+    display: flex;
+}
+
+i {
+    padding: 5px;
+}
+
+.line-with-icon {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 20px;
+}
+
+.circle-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    /* You can adjust the color */
+    margin-right: 8px;
+    /* Adjust the spacing between the circle and text */
+}
+
+button.btn-btm {
+    border: 1px solid black;
+    background-color: rgb(255, 89, 0);
+    font-weight: 400;
+    color: black;
+    height: 40px;
+    width: 190px;
+    border-radius: 10px;
+    margin: 25px;
+    margin-left: 95px;
+    text-align: center;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes colorChange {
+    0% {
+        background-color: #3498db;
+        /* Initial color */
+    }
+
+    25% {
+        background-color: #e74c3c;
+        /* Color after 25% of animation */
+    }
+
+    50% {
+        background-color: #2ecc71;
+        /* Color after 50% of animation */
+    }
+
+    75% {
+        background-color: #f39c12;
+        /* Color after 75% of animation */
+    }
+
+    100% {
+        background-color: #3498db;
+        /* Final color, same as the initial color */
+    }
+}
+
+/* Add the following styles for the soft and loveable animation */
+@keyframes softLoveable {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+:root {
+    --primary: #227093;
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    /* Theme color */
+    --theme: var(--primary);
+}
+
+
+
+
+@keyframes bounce {
+    25% {
+        transform: rotate(90deg) translate(.25rem);
+    }
+
+    75% {
+        transform: rotate(90deg) translate(-.25rem);
+    }
+}
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px;
+}
+
+/* Style the accordion item headers */
+.accordion-item {
+    background-color: wheat;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+/* Style the arrow symbol */
+.accordion-item::after {
+    content: '\25B6';
+    /* Unicode character for right-pointing triangle/arrow */
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when the accordion item is active */
+.active::after {
+    transform: rotate(90deg);
+}
+
+/* Style the accordion content */
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1.5px solid white;
+    padding-bottom: 15PX;
+    margin-bottom: 10PX;
+    background-color: rgb(255, 145, 0);
+
+}
+
+/* Style the images */
+.accordion-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 33%;
+}
+
+body,
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+footer {
+    Background: #003366;
+    padding: 10px;
+    color: #000;
+    font-size: 14px;
+    display: flex;
+
+}
+
+.colrow-mainfooter {
+    display: flex;
+    height: 80%;
+    
+
+}
+
+:root {
+    --red: #f00;
+    --green: #0f0;
+    --blue: #00f;
+    --white: #fff;
+    --black: #000;
+}
+
+.colrow-3 {
+    margin-left: 80px;
+    padding: 5px;
+}
+
+.colrow-3 li a {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+#contact {
+    margin-left: 25px;
+}
+
+#quick {
+    margin-left: 25px;
+}
+/* side table radio buttons */
+
+table {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+th,
+td {
+    margin-left: 8px;
+}
+
+
+del {
+    color: red;
+}
+
+.btm-left {
+    border: 2px solid rgb(217, 215, 215);
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btm-left img {
+    margin-left: 30%;
+    height: 100px;
+    width: 100px;
+}
+
+.why-us-heading h5 {
+    margin: 30%;
+}
+
+.colrow {
+    border-bottom: 2px solid gray;
+}
+/* new btn */
+#a {
+    position: relative;
+    width: 200px;
+    height: 55px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 45%;
+}
+
+#a .i {
+    position: absolute;
+    inset: -2px;
+    display: block;
+    background: #f00;
+    border-radius: 5px;
+}
+
+#a .i,
+#a .i:nth-child(2) {
+    background: linear-gradient(var(--x), #00ccff, #0e1538, #0e1538, #d400d4);
+}
+
+#a .i:nth-child(2) {
+    filter: blur(10px);
+}
+
+#a .span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 1px solid #040a29;
+    border-radius: 3px;
+    background: rgba(14, 21, 56, 0.65);
+    overflow: hidden;
+}
+
+#a .span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.075);
+    transform: skewX(25deg);
+}
+
+.acc-con {
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: #0e1538;
+    color: white;
+    width: 25%;
+    padding: 5px;
+}
+
+.acc-con1 {
+    margin-top: 15px;
+    margin-left: 12px;
+    background-color: #0e1538;
+    color: white;
+    width: 20%;
+    padding: 5px;
+}
+
+.bottom-content{
+    color: #0f0;
+}
+
+#abe{
+    box-sizing: border-box;
+    border-color: #f00;
+    border-style: double;
+    border-top: thick;
+    top:50px;
+ 
+}
+
+/* responsive content */
+@media only screen and (min-width: 768px) {
+    body,
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Add styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .box {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 5px;
+    }
+
+    .accordion-item {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .accordion-content img {
+        margin-left: 0; /* Center images for smaller screens */
+    }
+
+    .left h2 {
+        margin-top: 0; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+/* for small screen like mobile */
+
+@media only screen and (max-width: 400px) {
+    .accordion-item {
+        font-size: 12px; /* Further adjust font size for very small screens */
+    }
+
+    .content,
+    .accordion-content {
+        padding: 5px; /* Adjust padding for very small screens */
+    }
+
+    .box {
+        margin-top: 2px; /* Further adjust margin for very small screens */
+    }
+
+    .left {
+        margin: 5px; /* Further adjust margin for very small screens */
+    }
+
+    .img-left img {
+        max-width: 80%; /* Adjust image width for very small screens */
+    }
+
+    .colrow-3 {
+        margin-left: 2px; /* Further adjust margin for very small screens */
+    }
+
+    #abe {
+        margin-top: 10px; /* Adjust margin-top for very small screens */
+    }
+
+    #btn,
+    #a {
+        margin-left: 0; /* Center elements for very small screens */
+    }
+}
